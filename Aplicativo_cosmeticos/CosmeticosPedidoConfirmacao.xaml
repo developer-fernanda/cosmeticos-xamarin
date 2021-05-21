@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicativo_cosmeticos.CosmeticosPedidoConfirmacao"
+             Title="{Binding Nome}">
+    <ContentPage.Content>
+        <StackLayout >
+
+            <FlexLayout Direction="Row"         
+                             BackgroundColor="HotPink"
+                             AlignItems="Center"
+                             JustifyContent="SpaceBetween"      
+                            >
+                <StackLayout WidthRequest="200" >
+                    <Button x:Name="btnVoltar" Text="Voltar" Clicked="btnVoltar_Clicked" BackgroundColor="HotPink" TextColor="White" FontSize="20"></Button>
+                </StackLayout>
+                <StackLayout WidthRequest="300" Padding="10">
+                    <Label Text="Rita Presentes" HorizontalTextAlignment="end" TextColor="White" FontSize="24"/>
+                </StackLayout>
+            </FlexLayout>
+
+            <StackLayout BackgroundColor="White" Margin="40">
+                <Label Text="Compra efetuada com Sucesso!" FontSize="22" BackgroundColor="White" TextColor="DeepPink" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" />
+            </StackLayout>
+
+            <StackLayout BackgroundColor="White" Padding="30" >
+                <Image Source="{Binding ImagemUrl}" HeightRequest="150" WidthRequest="150" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="{Binding Nome}" FontSize="22" TextColor="DeepPink" VerticalOptions="Center"  HorizontalOptions="Center" FontAttributes="Bold" />
+                <Label Text="{Binding Descricao}" FontSize="16" TextColor="SteelBlue" VerticalOptions="Center"  HorizontalOptions="Center" />
+            </StackLayout>
+            
+            <StackLayout BackgroundColor="White">
+                <Label Text="{Binding ValorTotal}" FontSize="24" BackgroundColor="SteelBlue" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" Padding="10"/>
+                <Label Text="Compra efetuada com Sucesso!" Padding="20" FontSize="20" TextColor="SteelBlue" VerticalOptions="Center" HorizontalOptions="Center"  FontAttributes="Bold"/>
+            </StackLayout>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

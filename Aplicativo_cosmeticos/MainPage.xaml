@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicativo_cosmeticos.MainPage"
+              Title="Cosméticos">
+
+    <StackLayout>
+        <StackLayout >
+            <Frame BackgroundColor="HotPink" Padding="12" CornerRadius="0">
+                <Label Text="Rita Presentes" HorizontalTextAlignment="Center" TextColor="White" FontSize="28"/>
+            </Frame>
+        </StackLayout>
+    
+        <ListView x:Name="lvProdutos" HasUnevenRows="True" ItemSelected="lvProdutos_ItemSelected" SeparatorColor="DeepPink">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <FlexLayout Direction="Row"         
+                             BackgroundColor="white"
+                             AlignItems="Center"
+                             JustifyContent="SpaceAround"      
+                            >
+                            <StackLayout BackgroundColor="white"  WidthRequest="200" Padding="25">
+                                <Image Source="{Binding ImagemUrl}"
+                                           HeightRequest="160"/>
+                            </StackLayout>
+                            <StackLayout BackgroundColor="White"  WidthRequest="300" Padding="10">
+                                <Label Text="{Binding Nome}"
+                                           TextColor="DeepPink"   FontSize="22" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Descricao}" 
+                                           TextColor="SteelBlue"  FontSize="16" HorizontalTextAlignment="Center" />
+                                <Label Text="{Binding Preco}" 
+                                           TextColor="DeepPink"  FontSize="22" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                            </StackLayout>
+
+                        </FlexLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

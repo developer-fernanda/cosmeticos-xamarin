@@ -1,0 +1,17 @@
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\CosmeticosDetailsPage.xaml.g.cs
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\CosmeticosPedidoConfirmacao.xaml.g.cs
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\CosmeticosPedidoPage.xaml.g.cs
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\Aplicativo_cosmeticos.AssemblyInfoInputs.cache
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\Aplicativo_cosmeticos.AssemblyInfo.cs
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\Aplicativo_cosmeticos.csproj.CoreCompileInputs.cache
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\Aplicativo_cosmeticos.dll
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\ref\Aplicativo_cosmeticos.dll
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\Aplicativo_cosmeticos.pdb
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\Aplicativo_cosmeticos.csprojAssemblyReference.cache
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\bin\Debug\netstandard2.0\Aplicativo_cosmeticos.deps.json
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\bin\Debug\netstandard2.0\Aplicativo_cosmeticos.dll
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\bin\Debug\netstandard2.0\ref\Aplicativo_cosmeticos.dll
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\bin\Debug\netstandard2.0\Aplicativo_cosmeticos.pdb
+C:\TDS - II\PAM\Xamarin\Aplicativo_cosmeticos\Aplicativo_cosmeticos\obj\Debug\netstandard2.0\XamlC.stamp

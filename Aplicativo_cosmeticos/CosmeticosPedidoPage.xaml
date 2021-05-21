@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicativo_cosmeticos.CosmeticosPedidoPage"
+             Title="{Binding Nome}">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <FlexLayout Direction="Row"         
+                             BackgroundColor="HotPink"
+                             AlignItems="Center"
+                             JustifyContent="SpaceBetween"      
+                            >
+                <StackLayout WidthRequest="200" >
+                    <Button x:Name="btnVoltar" Text="Voltar" Clicked="btnVoltar_Clicked" BackgroundColor="HotPink" TextColor="White" FontSize="20"></Button>
+                </StackLayout>
+                <StackLayout WidthRequest="300" Padding="10">
+                    <Label Text="Rita Presentes" HorizontalTextAlignment="end" TextColor="White" FontSize="24"/>
+                </StackLayout>
+            </FlexLayout>
+
+            <FlexLayout Direction="Row"         
+                             BackgroundColor="White"
+                             AlignItems="Center"
+                             JustifyContent="SpaceAround"      
+                            >
+                <StackLayout BackgroundColor="White"  WidthRequest="200" Padding="25">
+                    <Image Source="{Binding ImagemUrl}"
+                                           HeightRequest="160"/>
+                </StackLayout>
+                <StackLayout BackgroundColor="White"  WidthRequest="300" Padding="10">
+                    <Label Text="{Binding Nome}"
+                                           TextColor="DeepPink"   FontSize="22" HorizontalTextAlignment="Center" />
+                    <Label Text="{Binding Descricao}" 
+                                           TextColor="SteelBlue"  FontSize="16" HorizontalTextAlignment="Center" />
+                    <Label Text="{Binding ValorTotal}" 
+                                           TextColor="SteelBlue"  FontSize="18" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                </StackLayout>
+
+            </FlexLayout>
+
+            <StackLayout Padding="10" BackgroundColor="white" >
+                <Label Text="Preencha as informações abaixo:" FontSize="Large" TextColor="DeepPink" VerticalOptions="Center"  HorizontalOptions="Center"></Label>
+            </StackLayout>
+            
+          
+            <StackLayout Padding="10"    BackgroundColor="white">
+                <Label Text="Nome" x:Name="strNome" TextColor="SteelBlue" FontSize="20"></Label>
+                <Entry Placeholder="Digite seu nome"> </Entry>
+                <Label Text="Telefone" x:Name="strFone" TextColor="SteelBlue" FontSize="20"></Label>
+                <Entry Placeholder="Digite seu Telefone"></Entry>
+                <Label Text="E-mail" x:Name="strEmail" TextColor="SteelBlue" FontSize="20"></Label>
+                <Entry Placeholder="Digite seu E-mail"></Entry>
+            </StackLayout>
+
+            <StackLayout>
+                <Button x:Name="BtnPedido" Text="Concluir pedido" Clicked="BtnPedido_Clicked" VerticalOptions="End" 
+                    TextColor="White" BackgroundColor="HotPink" FontSize="18" Margin="40" ></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicativo_cosmeticos.CosmeticosDetailsPage"
+             Title="{Binding Nome}">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <FlexLayout Direction="Row"         
+                             BackgroundColor="HotPink"
+                             AlignItems="Center"
+                             JustifyContent="SpaceBetween"      
+                            >
+                <StackLayout WidthRequest="200" >
+                    <Button x:Name="btnVoltar" Text="Voltar" Clicked="btnVoltar_Clicked" BackgroundColor="HotPink" TextColor="White" FontSize="20"></Button>
+                </StackLayout>
+                <StackLayout WidthRequest="300" Padding="10">
+                    <Label Text="Rita Presentes" HorizontalTextAlignment="end" TextColor="White" FontSize="24"/>
+                </StackLayout>
+            </FlexLayout>
+            <StackLayout BackgroundColor="white" Padding="20">
+                <Label Text="Selecione uma opção de Entrega:" BackgroundColor="white" FontSize="Large" TextColor="DeepPink"   VerticalOptions="Center"  HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <TableView BackgroundColor="white">
+                <TableRoot>
+                    <TableSection >
+                        <SwitchCell Text="{Binding TextoRetirarLoja}"
+                        On="{Binding RetirarLoja, Mode=TwoWay}"></SwitchCell>
+                        <SwitchCell Text="{Binding TextoEntregaAgendada}"
+                        On="{Binding EntregaAgendada, Mode=TwoWay}"></SwitchCell>
+                        <SwitchCell Text="{Binding TextoEntregaRapida}"
+                        On="{Binding EntregaRapida, Mode=TwoWay}"></SwitchCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <StackLayout BackgroundColor="white" Padding="20">
+                <Image Source="{Binding ImagemUrl}" HeightRequest="150" WidthRequest="150"/>
+                <Label Text="{Binding Nome}" FontSize="Large" TextColor="DeepPink" VerticalOptions="Center"  HorizontalOptions="Center" />
+                <Label Text="{Binding Descricao}" FontSize="16" TextColor="SteelBlue" VerticalOptions="Center"  HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout BackgroundColor="white" Padding="10">
+                <Label Text="{Binding ValorTotal}" TextColor="SteelBlue" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="Btnproximo" Text="Confirmar" Clicked="Btnproximo_Clicked_1" VerticalOptions="End"
+                    TextColor="White" BackgroundColor="HotPink" FontAttributes="Bold" FontSize="18" Margin="40" ></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
